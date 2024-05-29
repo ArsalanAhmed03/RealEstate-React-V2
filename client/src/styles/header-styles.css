@@ -1,0 +1,141 @@
+a{
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 6vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.5vmax;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+.page-options {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-options a {
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+    font-size: 1.2vmax;
+}
+
+.page-options a:hover {
+    border-right: 1px solid rgb(91, 91, 91);
+    border-left: 1px solid rgb(91, 91, 91);
+    background-color: #3535351d;
+}
+
+header a button {
+    margin: 10px;
+    width: 8vw;
+    height: 2.5em;
+    border: 1px solid black;
+    transition: all;
+    transition-duration: 0.2s;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2vmax;
+}
+
+header a button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #353535;
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+header a button:hover {
+    transform: scale(1.15);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a button:hover::before {
+    left: 0;
+}
+
+.input_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 25%;
+    margin: 5px;
+}
+
+.input_form input {
+    box-sizing: border-box;
+    height: 150%;
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.input_form input::placeholder {
+    font-size: 1vmax;
+}
+
+.input_form input:focus {
+    outline: none;
+    border: 2px solid rgb(91, 91, 91);
+}
+
+.input_form button {
+    height: 150%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(62, 62, 62);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.1vmax;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input_form button:hover {
+    background-color: rgb(91, 91, 91);
+}
